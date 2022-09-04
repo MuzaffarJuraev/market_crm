@@ -3,6 +3,7 @@ import Home from "../containers/Home";
 
 // auth components
 import Auth from "../containers/Auth";
+import Dashboard from "../views/Dashboard";
 
 export const publicRoutes = [
   {
@@ -22,7 +23,7 @@ export const privateRoutes = [
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <Dashboard />,
       },
     ],
   },
