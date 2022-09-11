@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledSidebar = styled.div`
   width: ${({ isOpen }) => (isOpen ? "300px" : "50px")};
-  height: 91.5vh;
+  height: 100%;
   transition: width 0.5s;
   position: relative;
 `;
