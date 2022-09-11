@@ -6,6 +6,7 @@ import Container from "../../components/Container";
 import Content from "../../components/Content";
 import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
+import { OutletCont } from "./styles";
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       <Navbar />
       <Content>
         <Sidebar />
-        <Outlet />
+        <OutletCont>
+          <Outlet />
+        </OutletCont>
       </Content>
     </Container>
   );
